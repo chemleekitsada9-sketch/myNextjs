@@ -5,15 +5,17 @@ export default function Navbar() {
   return (
     <>
     <nav>
-      <div>
-        <Image src="/logo.png" width={100} height={200} alt="logo" />
+      <div className="logo">
+        <Link href="/">
+          <Image src="/logo.png" width={100} height={200} alt="logo" priority/>
+        </Link>
       </div>
-      <ul>
-        <li><Link href="/">หน้าแรก</Link></li>
-        <li><Link href="/about">เกี่ยวกับเรา</Link></li>
-        <li><Link href="/products">สินค้า</Link></li>
-      </ul>
-      </nav>
+      <div>
+        <Link href="/">หน้าแรก</Link>
+        <Link href="/about">เกี่ยวกับเรา</Link>
+        <Link href="/products">สินค้า</Link>
+      </div>
+    </nav>
     </>
   );
 }
