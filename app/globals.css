@@ -3,13 +3,24 @@ body{
   color:black;
 }
 a{
-  color:blue;
   text-decoration: none; /* ขีดเส้นใต้ */
 }
 nav{
   margin: 10px auto;
   padding:10px 0;
   display:flex;
+  justify-content:space-between;
+  align-items: center;
+  background:#333;
+}
+nav a{
+  margin-left:18px;
+  padding:10px;
+  color:white;
+  font-size: 18px;
+}
+footer{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
